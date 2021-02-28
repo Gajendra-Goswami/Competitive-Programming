@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a[6],pivot=0;int i=-1;
+	int n=sizeof(a)/sizeof(a[0]);
+	cout<<"enter arrray elements";
+	for(int c=0;c<n;c++)
+	{
+		cin>>a[c];
+	}
+	int j=0;
+	for(int c=0;c<n;c++)
+	{
+	if(a[j]<pivot)
+	{
+		i++;
+		swap(a[i],a[j]);
+		j++;
+	}
+	else
+	{
+		j++;
+	}
+}
+	cout<<"new array";
+	for(int c=0;c<n;c++)
+	{
+		cout<<a[c]<<" ";
+		
+	}
+	return 0;
+}
