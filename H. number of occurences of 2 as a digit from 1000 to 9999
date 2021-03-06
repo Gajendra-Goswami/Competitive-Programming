@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,j,count=0;
+	int n;
+	cout<<"enter last number";
+	cin>>n;
+	for(i=1000;i<=9999;i++)
+	{
+		for(j=i;j>0;j=j/10)
+		{
+			if(j%10==2)
+			count++;
+		}
+	}
+	cout<<"count="<<count;
+	return 0;
+}
