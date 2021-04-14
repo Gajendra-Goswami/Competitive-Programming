@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+int min(int a[],int);
+
+int main()
+{
+	int res;
+	int size=4;
+	int a[]= {12,20,30,40};
+	res = min(a,size);
+	printf("min=%d",res);
+}
+
+int min(int a[],int size)
+{
+	int i;
+	int min;
+	min=a[0];
+	for(i=1;i<size;i++)
+	{
+		if(a[i]<min)
+		min=a[i];
+	}
+	return min;
+}

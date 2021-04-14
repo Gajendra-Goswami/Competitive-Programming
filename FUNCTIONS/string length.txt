@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+int stringLength(char a[]);
+
+int main()
+{
+	char a[50];
+	int i=0;
+	int rev;
+	printf("enter a string\n");
+	gets(a);
+	rev=stringLength(&a[0]);
+	printf("length=%d",rev);
+	getch();
+}
+
+int stringLength(char a[])
+{
+	int i=0;
+	while(a[i]!='\0')
+	{
+		i++;
+	}
+	return i;
+}

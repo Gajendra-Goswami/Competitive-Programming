@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void reverse(char []);
+int main()
+{
+	int i;
+	char a[]="suyash";
+	reverse(a);
+	for(i=0;i<strlen(a);i++)
+	{
+		printf("%c",a[i]);
+	}
+}
+void reverse(char a[])
+{
+	
+int i=0,last=strlen(a)-1;
+char temp;
+while(i<last)
+{
+	temp=a[i];
+	a[i]=a[last];
+	a[last]=temp;
+	i++;
+	last--;
+}
+}

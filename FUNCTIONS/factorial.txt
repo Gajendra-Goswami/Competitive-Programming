@@ -1,0 +1,21 @@
+#include<conio.h>
+#include<stdio.h>
+int fact(int);
+int main()
+{
+	long int a;
+	printf("enter a number to calculate fact\n");
+	scanf("%d",&a);
+	printf("factorial is %d",fact(a));
+	getch();
+}
+int fact(int a)
+{
+		int f=1;
+	while(a>1)
+	{
+	f=f*a;
+	a--;	
+	}
+	return f;
+}
